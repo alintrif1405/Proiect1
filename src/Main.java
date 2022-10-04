@@ -6,11 +6,12 @@ public class Main {
         System.out.print("Enter numbers: ");
         int sum=0;
         int count=0;
-        int number=2;
+        int number;
+        number = reader.nextInt();
         while(number!=0){
-            number = reader.nextInt();
             sum=sum+number;
             count++;
+            number = reader.nextInt();
         }
         System.out.println(sum/count);
     }
